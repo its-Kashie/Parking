@@ -32,7 +32,7 @@ Each request follows a strict state machine to prevent invalid transitions.
 
 
 **Allowed Transitions:**
-1.  **Standard:** `REQUESTED` ⮕ `ALLOCATED` ⮕ `OCCUPIED` ⮕ `RELEASED`[span_13](end_span).
+1.  **Standard:** `REQUESTED` ⮕ `ALLOCATED` ⮕ `OCCUPIED` ⮕ `RELEASED`.
 2.  **Cancellation:** `REQUESTED` ⮕ `CANCELLED` or `ALLOCATED` ⮕ `CANCELLED`.
 3.  **Enforcement:** Invalid transitions (e.g., `RELEASED` ⮕ `CANCELLED`) must be explicitly prevented.
 
